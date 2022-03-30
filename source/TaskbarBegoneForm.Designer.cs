@@ -1,29 +1,28 @@
 ﻿
-namespace WindowsFormsApp1 {
-    partial class TaskbarBegoneForm {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
-        private System.ComponentModel.IContainer components = null;
+partial class TaskbarBegoneForm {
+    /// <summary>
+    /// Required designer variable.
+    /// </summary>
+    private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
-        protected override void Dispose(bool disposing) {
-            if (disposing && (components != null)) {
-                components.Dispose();
-            }
-            base.Dispose(disposing);
+    /// <summary>
+    /// Clean up any resources being used.
+    /// </summary>
+    /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+    protected override void Dispose(bool disposing) {
+        if (disposing && (components != null)) {
+            components.Dispose();
         }
+        base.Dispose(disposing);
+    }
 
-        #region Windows Form Designer generated code
+    #region Windows Form Designer generated code
 
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
-        private void InitializeComponent() {
+    /// <summary>
+    /// Required method for Designer support - do not modify
+    /// the contents of this method with the code editor.
+    /// </summary>
+    private void InitializeComponent() {
             this.components = new System.ComponentModel.Container();
             this.btnShow = new System.Windows.Forms.Button();
             this.btnHide = new System.Windows.Forms.Button();
@@ -35,9 +34,11 @@ namespace WindowsFormsApp1 {
             // 
             // btnShow
             // 
-            this.btnShow.Location = new System.Drawing.Point(12, 12);
+            this.btnShow.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnShow.Location = new System.Drawing.Point(12, 14);
             this.btnShow.Name = "btnShow";
-            this.btnShow.Size = new System.Drawing.Size(293, 107);
+            this.btnShow.Size = new System.Drawing.Size(349, 108);
             this.btnShow.TabIndex = 0;
             this.btnShow.Text = "show";
             this.btnShow.UseVisualStyleBackColor = true;
@@ -45,9 +46,11 @@ namespace WindowsFormsApp1 {
             // 
             // btnHide
             // 
-            this.btnHide.Location = new System.Drawing.Point(12, 125);
+            this.btnHide.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnHide.Location = new System.Drawing.Point(12, 127);
             this.btnHide.Name = "btnHide";
-            this.btnHide.Size = new System.Drawing.Size(293, 107);
+            this.btnHide.Size = new System.Drawing.Size(349, 108);
             this.btnHide.TabIndex = 1;
             this.btnHide.Text = "hide";
             this.btnHide.UseVisualStyleBackColor = true;
@@ -81,7 +84,7 @@ namespace WindowsFormsApp1 {
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(316, 250);
+            this.ClientSize = new System.Drawing.Size(372, 250);
             this.Controls.Add(this.txtInfo);
             this.Controls.Add(this.btnList);
             this.Controls.Add(this.btnHide);
@@ -93,16 +96,15 @@ namespace WindowsFormsApp1 {
             this.ResumeLayout(false);
             this.PerformLayout();
 
-        }
-
-        #endregion
-
-        private System.Windows.Forms.Button btnShow;
-        private System.Windows.Forms.Button btnHide;
-        private System.Windows.Forms.Button btnList;
-        private System.Windows.Forms.TextBox txtInfo;
-        private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.Timer timer2;
     }
+
+    #endregion
+
+    private System.Windows.Forms.Button btnShow;
+    private System.Windows.Forms.Button btnHide;
+    private System.Windows.Forms.Button btnList;
+    private System.Windows.Forms.TextBox txtInfo;
+    private System.Windows.Forms.Timer timer1;
+    private System.Windows.Forms.Timer timer2;
 }
 
