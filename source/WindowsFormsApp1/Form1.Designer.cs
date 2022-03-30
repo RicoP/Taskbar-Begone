@@ -1,6 +1,6 @@
 ﻿
 namespace WindowsFormsApp1 {
-    partial class Form1 {
+    partial class TaskbarBegoneForm {
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -24,9 +24,13 @@ namespace WindowsFormsApp1 {
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
+            this.components = new System.ComponentModel.Container();
             this.btnShow = new System.Windows.Forms.Button();
             this.btnHide = new System.Windows.Forms.Button();
             this.btnList = new System.Windows.Forms.Button();
+            this.txtInfo = new System.Windows.Forms.TextBox();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // btnShow
@@ -59,22 +63,35 @@ namespace WindowsFormsApp1 {
             this.btnList.UseVisualStyleBackColor = true;
             this.btnList.Click += new System.EventHandler(this.btnList_Click);
             // 
-            // Form1
+            // txtInfo
+            // 
+            this.txtInfo.Location = new System.Drawing.Point(12, 320);
+            this.txtInfo.Multiline = true;
+            this.txtInfo.Name = "txtInfo";
+            this.txtInfo.Size = new System.Drawing.Size(292, 268);
+            this.txtInfo.TabIndex = 3;
+            // 
+            // timer2
+            // 
+            this.timer2.Enabled = true;
+            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
+            // 
+            // TaskbarBegoneForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(316, 250);
+            this.Controls.Add(this.txtInfo);
             this.Controls.Add(this.btnList);
             this.Controls.Add(this.btnHide);
             this.Controls.Add(this.btnShow);
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(332, 289);
-            this.MinimumSize = new System.Drawing.Size(332, 289);
-            this.Name = "Form1";
-            this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
+            this.Name = "TaskbarBegoneForm";
+            this.Text = "Taskbar Begone";
+            this.Load += new System.EventHandler(this.TaskbarBegoneForm_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -83,6 +100,9 @@ namespace WindowsFormsApp1 {
         private System.Windows.Forms.Button btnShow;
         private System.Windows.Forms.Button btnHide;
         private System.Windows.Forms.Button btnList;
+        private System.Windows.Forms.TextBox txtInfo;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Timer timer2;
     }
 }
 
